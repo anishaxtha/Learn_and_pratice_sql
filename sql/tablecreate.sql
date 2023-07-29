@@ -40,7 +40,7 @@ FROM employee
 WHERE hire_date IS  NULL;
 
 SELECT * FROM employee
-WHERE first_name ="anu";
+WHERE first_name ="anisha";
 
 
 SELECT first_name
