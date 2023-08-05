@@ -1,0 +1,17 @@
+use mydb;
+
+CREATE TABLE test(
+	my_date DATE,
+    my_time TIME,
+    my_datetime DATETIME
+);
+
+INSERT INTO test
+VALUES(CURRENT_DATE() -1 , CURRENT_TIME(), NOW()); 
+
+INSERT INTO test
+VALUES(CURRENT_DATE(),NULL, NULL);
+INSERT INTO test
+VALUES(NULL, CURRENT_TIME(), NOW());
+SELECT * FROM test;
+
